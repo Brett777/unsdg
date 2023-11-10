@@ -13,7 +13,7 @@ openai.api_key = os.environ["OPENAI_API_KEY"]
 st.set_page_config(page_title="GAC UN Sustainable Development", layout="wide")
 
 def getData():
-    df = pd.read_csv(r"C:\Users\BrettOlmstead\Downloads\Global Affairs Canada\projects.csv", index_col=False)
+    df = pd.read_csv(r"projects.csv", index_col=False)
     return df[["Title"," Description","Country","Executing Agency Partner","DAC Sector","Expected Results","Progress and Results Achieved"]]
 
 def getUNSDG(data):
