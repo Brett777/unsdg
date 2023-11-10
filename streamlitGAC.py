@@ -6,7 +6,7 @@ import json
 import openai
 
 openai.api_key = os.environ["OPENAI_API_KEY"]
-#client = openai.OpenAI()
+client = openai.OpenAI()
 #list = pd.DataFrame(client.models.list())
 
 #Configure the page title, favicon, layout, etc
@@ -17,7 +17,7 @@ def getData():
     return df[["Title"," Description","Country","Executing Agency Partner","DAC Sector","Expected Results","Progress and Results Achieved"]]
 
 def getUNSDG(data):
-    response = openai.ChatCompletion.create(
+    response = client.chat.completions.create(
         temperature=0.9,
         #model="gpt-4",
         #model="gpt-3.5-turbo",
