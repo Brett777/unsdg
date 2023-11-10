@@ -18,7 +18,8 @@ def getData():
 
 def getUNSDG(data):
     response = client.chat.completions.create(
-        temperature=0.9,
+        temperature=0,
+        seed=1234,
         #model="gpt-4",
         #model="gpt-3.5-turbo",
         model='gpt-4-1106-preview',
