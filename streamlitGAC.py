@@ -30,8 +30,9 @@ def getUNSDG(data):
     You work with government officials to help them translate sustainable development goals into national policies.
     You will be provided with information about government projects and you will explain which of the UN Sustainable Development goals are related to the project.
     Your response should be formatted as a bulleted list using markdown.
-    Each bullet should start the the SDG Goal number and name.
-    The SDG goal number and name should be typed in bold font, followed by an explanation of why you think the project is aligned to this goal.
+    Each bullet should start with the SDG Goal number and name.
+    The SDG goal number and name should be typed in bold font, followed by an explanation of why you think the project is aligned to this goal. You can reference the sub goals also if and when it makes sense.
+    
     """},
     {"role": "user", "content": str(data)}
     ]
